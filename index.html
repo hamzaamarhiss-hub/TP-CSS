@@ -1,29 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>test html</title>
-    </head>
-    <body>
-<div>
-    <div>
-        <p>bonjour </p>
-        <p>salut</p>
-        <p>bonsoir</p>
-        <h1>fotmation </h1>
-        <h1>alloooo</h1>
-        <h1>hamza</h1>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMO1JfgNbKVl-gKi3KdxVcXESoSVwG9HnP5Dr81n1eA&s=10">
-        
-    </div>
-</div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les sélecteurs CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header id="entete">
+        <h1>Bienvenue dans notre centre</h1>
+        <p>Apprendre le développement web</p>
+    </header>
 
+    <nav>
+        <a href="#formations">Nos formations</a>
+        <a href="#contact">Contact</a>
+        <a href="https://example.com" target="_blank">Site partenaire</a>
+    </nav>
 
+    <main>
+        <section id="formations">
+            <h2>Nos formations</h2>
 
+            <p class="introduction">Découvrez nos formations disponibles.</p>
+            <p>Les inscriptions sont ouvertes.</p>
 
+            <article class="carte">
+                <h3>Formation HTML</h3>
+                <p>Apprendre à structurer une page web.</p>
+                <p class="important">Formation pour débutants.</p>
+                <a href="html.html">Voir le programme</a>
+            </article>
 
+            <article class="carte populaire">
+                <h3>Formation CSS</h3>
+                <p>Apprendre à mettre en forme une page web.</p>
+                <p class="important">Places limitées !</p>
+                <a href="css.html">Voir le programme</a>
+            </article>
 
-    </body>
+            <article class="carte">
+                <h3>Formation JavaScript</h3>
+                <p>Apprendre à rendre une page interactive.</p>
+                <a href="javascript.html">Voir le programme</a>
+            </article>
+        </section>
+
+        <section id="outils">
+            <h2>Les outils nécessaires</h2>
+            <ul>
+                <li>Un éditeur de code</li>
+                <li>Un navigateur</li>
+                <li>Un dossier de travail</li>
+                <li>De la curiosité</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+
+            <form>
+                <label for="nom">Nom :</label>
+                <input id="nom" type="text" placeholder="Votre nom" required>
+
+                <label for="email">Email :</label>
+                <input id="email" type="email" placeholder="Votre email" required>
+
+                <label for="sujet">Sujet :</label>
+                <input id="sujet" type="text" placeholder="Sujet facultatif">
+
+                <button type="submit">Envoyer</button>
+                <button type="button" disabled>Indisponible</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Centre de formation — Atelier CSS</p>
+    </footer>
+
+</body>
 </html>
