@@ -1,0 +1,14 @@
+*{
+    background-color:coral;
+}
+div p{
+    text-align: center;
+}
+img{
+    
+    width: 200px;
+    height: 200px;
+ }
+ div > h1:first-of-type{
+    background-color: blue;
+ } 
